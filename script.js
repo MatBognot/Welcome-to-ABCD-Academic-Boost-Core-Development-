@@ -1,7 +1,7 @@
 // Summarization tool function
 function summarizeText() {
     let inputText = document.getElementById('inputText').value;
-    let summary = inputText.split(" ").slice(0, 20).join(" ") + "..."; // Basic summarization (first 20 words)
+    let summary = inputText.split(" ").slice(0, 2000).join(" ") + "..."; // Basic summarization (first 2000 words)
     document.getElementById('summaryOutput').innerText = summary;
 }
 
