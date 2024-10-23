@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project ABCD - Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to ABCD (Academic Boost Core Development)</h1>
+        <p>Empowering students to take control of their learning!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#summary">Summarization Tool</a></li>
+            <li><a href="#quiz">Game & Quiz</a></li>
+            <li><a href="#reflective">Reflective Journal</a></li>
+        </ul>
+    </nav>
+
+    <section id="summary">
+        <h2>Summarization Tool</h2>
+        <textarea id="inputText" placeholder="Paste your text here..."></textarea>
+        <button onclick="summarizeText()">Summarize</button>
+        <h3>Summary:</h3>
+        <p id="summaryOutput"></p>
+    </section>
+
+    <section id="quiz">
+        <h2>Game & Quiz Modules</h2>
+        <p>Choose your learning activity:</p>
+        <button onclick="startQuiz()">Take a Quiz</button>
+        <button onclick="playGame()">Play a Learning Game</button>
+        <div id="quizContainer"></div>
+    </section>
+
+    <section id="reflective">
+        <h2>Reflective Learning Journal</h2>
+        <textarea id="reflectiveText" placeholder="Record your thoughts, insights, and questions here..."></textarea>
+        <button onclick="saveJournal()">Save Journal</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Project ABCD - All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
